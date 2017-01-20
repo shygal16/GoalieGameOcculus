@@ -77,7 +77,7 @@ public class ShooterScript : MonoBehaviour {
 
             Ball.transform.position=pos;
         }
-        else if ( Input.GetKeyDown(KeyCode.Space) && Ball.gameObject.GetComponent<BallScript>().Alive==false)
+        else if ( Input.GetKeyUp(KeyCode.Space) && Ball.gameObject.GetComponent<BallScript>().Alive==false)
         {
             ResetGame();
         }
